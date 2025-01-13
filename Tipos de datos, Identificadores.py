@@ -1,14 +1,7 @@
 #Aplicar los conocimientos adquiridos sobre tipos de datos, identificadores y convenciones de nomenclatura en Python para desarrollar un pequeño programa. El código será implementado en el IDE PyCharm o  Visual Studio Code y posteriormente publicado en el repositorio de GitHub de cada estudiante.
-
 #Conversor de Unidades de Medida
-
-# Inicio del programa
-print("Este programa convertirá Unidades de Medida")
-print("¿Qué unidad de medida quieres convertir?: ")
-print("1. Metros a centímetros")
-print("2. Kilómetros a metros")
-print("3. Centímetros a metros")
-print("4. Metros a kilómetros")
+# Conversor de Unidades de Medida
+# Este programa permite convertir distintas unidades de medida: metros a centímetros, kilómetros a metros,
 
 # Función para convertir metros a centímetros
 def metros_a_centimetros(metros):
@@ -26,6 +19,13 @@ def centimetros_a_metros(centimetros):
 def metros_a_kilometros(metros):
     return metros / 1000
 
+# Inicio del programa
+print("Este programa convertirá Unidades de Medida")
+print("¿Qué unidad de medida quieres convertir?: ")
+print("1. Metros a centímetros")
+print("2. Kilómetros a metros")
+print("3. Centímetros a metros")
+print("4. Metros a kilómetros")
 
 # Solicita al usuario que seleccione una opción
 try:
@@ -50,4 +50,5 @@ try:
         print("Opción inválida. Por favor, selecciona un número entre 1 y 4.")
 except ValueError:
     print("Entrada inválida. Por favor, ingresa números solamente.")
+
 
